@@ -51,3 +51,5 @@ where (telefon);
 update musteriler
 set adi = 'Emre2'  
 where musteri_id = 3;
+
+select * from urunler;

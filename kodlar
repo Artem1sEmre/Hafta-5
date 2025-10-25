@@ -44,3 +44,10 @@ insert into satıslar (satıs_id,satiş_fiyati) values (2,'20');
 insert into musteriler (musteri_id,adi) values (3,'Emre');
 insert into urunler (alis_fiyati,satiş_fiyati) values (10,'20');
 insert into stok (stok_id,tarih) values (5,'02.02.2020');
+
+delete from musteriler
+where (telefon);
+
+update musteriler
+set adi = ali , soyadi = yılmaz 
+where (adi , soyadi);

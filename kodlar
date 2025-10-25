@@ -1,0 +1,46 @@
+create database bak3;
+go
+use bak3;
+go
+create table urunler(
+    urun_id int,
+    musteri_id int,
+	satıs_id int,
+    urun_adi nchar,
+    alis_fiyati int,
+    satiş_fiyati int,
+    stok_id int
+);
+go
+create table musteriler(
+    musteri_id int,
+    adi nchar,
+    soyadi nchar,
+    telefon nchar
+);
+go
+create table stok(
+    stok_id int,
+    urun_id int,
+    fiyat  int,
+    adet int,
+    tarih datetime
+);
+go
+create table satıslar(
+    satıs_id int,
+    satiş_fiyati int,
+    satici_adi nchar,
+    urun_miktari int,
+    urun_stk datetime,
+    urun_adi nchar,
+    urun_id int
+);
+alter table urunler
+add satıs_id int;
+
+insert into urunler (urun_id,urun_adi) values (1,'kek');
+insert into satıslar (satıs_id,satiş_fiyati) values (2,'20');
+insert into musteriler (musteri_id,adi) values (3,'Emre');
+insert into urunler (alis_fiyati,satiş_fiyati) values (10,'20');
+insert into stok (stok_id,tarih) values (5,'02.02.2020');

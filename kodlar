@@ -46,10 +46,10 @@ insert into urunler (alis_fiyati,satiş_fiyati) values (10,'20');
 insert into stok (stok_id,tarih) values (5,'02.02.2020');
 
 delete from musteriler
-where (telefon);
+where (musteri_id=3);
 
 update musteriler
 set adi = 'Emre2'  
-where musteri_id = 3;
+where (musteri_id = 3);
 
 select * from urunler;

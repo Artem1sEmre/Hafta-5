@@ -49,5 +49,5 @@ delete from musteriler
 where (telefon);
 
 update musteriler
-set adi = ali , soyadi = yılmaz 
-where (adi , soyadi);
+set adi = 'Emre2'  
+where musteri_id = 3;
